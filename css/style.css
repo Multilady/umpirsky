@@ -607,6 +607,7 @@ body {
   padding-left: 150px;
   padding-right: 50px;
   flex-direction: column;
+  overflow: hidden;
   align-items: center;
   justify-content: center;
   -webkit-box-shadow: inset -4px 40px 24px -44px rgba(0,0,0,0.3);
@@ -741,9 +742,115 @@ body {
   .about_info {
     font-size: 14px;
   }
+  .expertise_container {
+    flex-direction: column;
+    padding-right: 10px;
+  }
+  .expertise_container_left {
+    width: 100%;
+    min-height: 200px;
+  }
+  .expertise_basic_info {
+    padding-left: 25px;
+    padding-top: 10px;
+  }
+  .expertise_basic_intro {
+    padding-left: 15px;
+  }
+  .expertise_container_right {
+    padding-left: 15px;
+    width: 100%;
+  }
+  .intro_button_text {
+    font-size: 15px;
+  }
+  .expertise_outlook {
+    padding-right: 5px;
+  }
+  .intro {
+    font-size: 14px;
+  }
+  .quote_container {
+    padding-left: 105px;
+    padding-right: 5px;
+  }
+  .quote_top {
+    font-size: 12px;
+    letter-spacing: 0px;
 }
+  .quote_middle {
+    font-size: 17px;
+    line-height: 23px;
+    padding-top: 34px;
+}
+  .mark {
+    font-size: 20px;
+  }
+  .quote_bottom {
+    font-size: 9px;
+    line-height: 2;
+    padding-top: 30px;
+    text-align: center;
+  }
+  .break_block {
+    display: block;
+  }
+  .break_block i {
+    display: none;
+  }
+  .break_block_one {
+    display: block;
+  }
+  .spotlight_container {
+    flex-direction: column;
+    padding-left: 105px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+  }
+  .spotlight_work {
+    width: 100%;
+  }
+  .spotlight_laptop {
+    width: 100%;
+    min-block-size: 150px;
+  }
+  .spotlight_laptop_image {
+    width: 100%;
+  }
+  .spotlight_text {
+    width: 100%;
+  }
+  .spotlight_text_intro {
+    padding-top: 6px;
+  }
+  .contact_container {
+    padding-left: 130px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+  }
+  .contact_triangle {
+    margin-top: -20px;
+  }
+  .footer_container {
+    width: 100%;
 
-/* Small devices (landscape phones, less than 768px) */
+    padding-left: 110px;
+    padding-right: 10px;
+    flex-direction: column;
+}
+.footer_container_left {
+    padding-top: 10px;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+.footer_container_right {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+  }
+  /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.99px) {
 }
 
