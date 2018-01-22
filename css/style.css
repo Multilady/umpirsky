@@ -42,6 +42,7 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#af005b', endColorstr='#ff3f35',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 .logo {
+  text-decoration: none;
   animation-name: spin;
   animation-duration: 5000ms;
   animation-iteration-count: infinite;
@@ -109,10 +110,11 @@ body {
   overflow: hidden;
   transition: all 0.5s linear;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-
+  text-decoration: none;
 }
 .item_nav:hover {
   background: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
 }
 .item_nav:hover .item_nav_highlight {
   right: 0;

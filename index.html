@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>umpirsky web page</title>
+    <link rel="icon" href="img/favicon.png?v=1.1">
     <!-- Load Normalize CSS Library -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -16,12 +17,12 @@
     <div class="main_container">
       <div class="taskbar_navigation">
         <div class="logo_bar">
-            <div class="logo">
+            <a href="#top" class="logo">
               <svg class="logosvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="89px" height="44px">
                   <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M83.629,5.436 L56.966,5.429 L47.703,15.913 L47.728,28.175 L44.502,31.608 L41.310,28.322 L41.308,15.929 L32.033,5.429 L5.369,5.436 L-0.000,-0.002 L34.238,-0.002 L44.499,11.282 L54.761,-0.002 L88.998,-0.002 L83.629,5.436 ZM35.247,14.046 L13.796,14.046 L8.509,8.725 L30.566,8.725 L35.247,14.046 ZM37.978,30.059 L44.498,36.484 L51.006,30.043 L51.006,17.398 L72.735,17.443 L67.431,22.781 L56.710,22.781 L56.729,32.430 L44.499,44.001 L32.269,32.430 L32.288,22.781 L21.567,22.781 L16.263,17.443 L37.978,17.398 L37.978,30.059 ZM58.432,8.725 L80.490,8.725 L75.201,14.046 L53.752,14.046 L58.432,8.725 Z"
                   />
               </svg>
-            </div>
+            </a>
         </div>
         <div class="top_nav">
               <div class="nav_bar">
@@ -33,41 +34,41 @@
               <!-- Navigation Icons -->
               <div class="items_nav_container">
                 <!-- Nav 01 -->
-                <div class="item_nav">
+                <a href="#aboutSection" class="item_nav">
                   <div class="item_nav_icon" data-toggle="tooltip" data-placement="right" title="About">
                     <i class="fa fa-pencil" aria-hidden="true"></i>
                   </div>
                   <div class="item_nav_highlight">
 
                   </div>
-                </div>
+                </a>
                 <!-- Nav 02 -->
-                <div class="item_nav">
+                <a href="#expertiseSection" class="item_nav">
                   <div class="item_nav_icon" data-toggle="tooltip" data-placement="right" title="" data-original-title="Expertise">
                     <i class="fa fa-mouse-pointer" aria-hidden="true"></i>
                   </div>
                   <div class="item_nav_highlight">
 
                   </div>
-                </div>
+                </a>
                 <!-- Nav 03 -->
-                <div class="item_nav">
+                <a href="#workSection" class="item_nav">
                   <div class="item_nav_icon" data-toggle="tooltip" data-placement="right" title="" data-original-title="Work">
                     <i class="fa fa-laptop" aria-hidden="true"></i>
                   </div>
                   <div class="item_nav_highlight">
 
                   </div>
-                </div>
+                </a>
                 <!-- Nav 04 -->
-                <div class="item_nav">
+                <a href="#contactSection" class="item_nav">
                   <div class="item_nav_icon" data-toggle="tooltip" data-placement="right" title="" data-original-title="Contact">
                     <i class="fa fa-envelope-o" aria-hidden="true"></i>
                   </div>
                   <div class="item_nav_highlight">
 
                   </div>
-                </div>
+                </a>
               </div>
             </div>
         <div class="bottom_nav">
@@ -137,7 +138,7 @@
           </div>
         </div>
       </div>
-      <div class="about_container">
+      <div id="aboutSection" class="about_container">
         <div class="about_container_left">
           <div class="about_circle">
             <div class="circle_image">
@@ -184,7 +185,7 @@
           <li><img src="img/logos/zend.svg"/></li>
         </ul>
       </div>
-      <div class="expertise_container">
+      <div id="expertiseSection" class="expertise_container">
         <div class="expertise_container_left">
           <div class="expertise_image">
 
@@ -262,7 +263,7 @@
           <i class="fa fa-quote-right" aria-hidden="true"></i>
         </div>
       </div>
-      <div class="spotlight_container">
+      <div id="workSection" class="spotlight_container">
         <div class="spotlight_work">
           <div class="spotlight_work_title">
             Work<br>Spotlight
@@ -315,7 +316,7 @@
           </a>
         </div>
       </div>
-      <div class="contact_container">
+      <div id="contactSection" class="contact_container">
         <div class="contact_triangle">
 
         </div>
