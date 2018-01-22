@@ -213,6 +213,10 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#af005b', endColorstr='#ff3f35',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+a.button {
+  text-decoration:none;
+  color:white;
+}
 .button:hover {
   padding-left: 30px;
   padding-right: 30px;
@@ -282,8 +286,8 @@ body {
 }
 .circle_image {
   display: flex;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border: 5px solid white;
   border-radius: 50%;
   background: url("../img/profil.jpg");
@@ -319,11 +323,12 @@ body {
 }
 .about_logos_container {
   display: flex;
-  padding-left: 150px;
+  /* padding-left: 150px; */
   background: #252525;
   width: 100%;
   height: 60px;
   overflow: hidden;
+  align-items: center;
 }
 .about_logos_container ul {
   display: flex;
@@ -335,13 +340,13 @@ body {
 
 }
 .about_logos_container ul li {
-  display: flex;
-  height: 50px;
+  dis4play: flex;
+  height: 30px;
   padding: 10px;
 
 }
 .about_logos_container ul li img {
-  height: 100%;
+  height: 30px;
   opacity: 0.2;
 }
 .expertise_container {
@@ -375,6 +380,7 @@ body {
   display: flex;
   font-size: 36px;
   font-weight: bold;
+  line-height: 1em;
 }
 .expertise_basic_intro {
   display: flex;
@@ -440,7 +446,7 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#af005b', endColorstr='#ff3f35',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.mark {
+.markquote {
   display: flex;
   width: 15%;
   align-items: center;
@@ -490,12 +496,14 @@ body {
   display: flex;
   font-size: 36px;
   font-weight: bold;
+  line-height: 1em;
   color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 10px;
 }
 .spotlight_work_thumbnails {
   display: flex;
   width: 100%;
-
+  margin-bottom: 10px;
 }
 .spotlight_work_thumbnails ul {
   display: flex;
@@ -526,24 +534,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.work_thumbnail.one {
-  background-image: url("../img/work/work01.jpg");
-}
-.work_thumbnail.two {
-  background-image: url("../img/work/work02.jpg");
-}
-.work_thumbnail.three {
-  background-image: url("../img/work/work01.jpg");
-}
-.work_thumbnail.four {
-  background-image: url("../img/work/work02.jpg");
-}
-.work_thumbnail.five {
-  background-image: url("../img/work/work01.jpg");
-}
-.work_thumbnail.six {
-  background-image: url("../img/work/work02.jpg");
-}
+
 .spotlight_laptop {
   display: flex;
   width: 40%;
@@ -563,6 +554,8 @@ body {
 .spotlight_work_name {
   color: rgba(0, 0, 0, 0.8);
   font-size: 14px;
+  text-align: left;
+  min-height: 21px;
 }
 .spotlight_text {
   display: flex;
@@ -578,6 +571,7 @@ body {
   font-weight: bold;
   border-bottom: 1px solid #C6C6C6;
   padding-bottom: 10px;
+  line-height: 1em;
 }
 .spotlight_text_intro {
   display: flex;
@@ -751,8 +745,9 @@ body {
     min-height: 200px;
   }
   .expertise_basic_info {
-    padding-left: 25px;
+    padding-left: 13px;
     padding-top: 10px;
+    margin-bottom: 10px;
   }
   .expertise_basic_intro {
     padding-left: 15px;
@@ -761,8 +756,8 @@ body {
     padding-left: 15px;
     width: 100%;
   }
-  .intro_button_text {
-    font-size: 15px;
+  .expertise_button {
+    font-size: 13px;
   }
   .expertise_outlook {
     padding-right: 5px;
@@ -783,7 +778,7 @@ body {
     line-height: 23px;
     padding-top: 34px;
 }
-  .mark {
+  .markquote {
     font-size: 20px;
   }
   .quote_bottom {
@@ -803,12 +798,17 @@ body {
   }
   .spotlight_container {
     flex-direction: column;
-    padding-left: 105px;
-    padding-right: 5px;
+    padding-left: 120px;
+    padding-right: 20px;
     padding-bottom: 10px;
   }
   .spotlight_work {
     width: 100%;
+  }
+  .spotlight_work_title {
+    text-align: center;
+    justify-content: center;
+    line-height: 1em;
   }
   .spotlight_laptop {
     width: 100%;
@@ -822,6 +822,13 @@ body {
   }
   .spotlight_text_intro {
     padding-top: 6px;
+  }
+  .spotlight_work_button {
+    font-size: 15px;
+    align-self: center;
+  }
+  .spotlight_work_name {
+    text-align: center;
   }
   .contact_container {
     padding-left: 130px;
@@ -850,14 +857,31 @@ body {
     padding-bottom: 10px;
     justify-content: center;
   }
+}
   /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.99px) {
+  .quote_bottom {
+    font-size: 13px;
+  }
+  .spotlight_work_button {
+    font-size: 10px;
+  }
+  .spotlight_text_button {
+    font-size: 10px;
+  }
 }
-
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.99px) {
+  .quote_bottom {
+    font-size: 13px;
+  }
+  .spotlight_work_button {
+    font-size: 10px;
+  }
+  .spotlight_text_button {
+    font-size: 10px;
+  }
 }
-
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.99px) {
 }

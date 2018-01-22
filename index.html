@@ -7,9 +7,10 @@
     <title>umpirsky web page</title>
     <!-- Load Normalize CSS Library -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css" />
-   <link rel="stylesheet" type="text/css" href="./css/fonts.css">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/fonts.css">
+     <link rel="stylesheet" type="text/css" href="./css/style.css">
   </head>
   <body>
     <div class="main_container">
@@ -33,7 +34,7 @@
               <div class="items_nav_container">
                 <!-- Nav 01 -->
                 <div class="item_nav">
-                  <div class="item_nav_icon">
+                  <div class="item_nav_icon" data-toggle="tooltip" data-placement="right" title="About">
                     <i class="fa fa-pencil" aria-hidden="true"></i>
                   </div>
                   <div class="item_nav_highlight">
@@ -42,7 +43,7 @@
                 </div>
                 <!-- Nav 02 -->
                 <div class="item_nav">
-                  <div class="item_nav_icon">
+                  <div class="item_nav_icon" data-toggle="tooltip" data-placement="right" title="" data-original-title="Expertise">
                     <i class="fa fa-mouse-pointer" aria-hidden="true"></i>
                   </div>
                   <div class="item_nav_highlight">
@@ -51,7 +52,7 @@
                 </div>
                 <!-- Nav 03 -->
                 <div class="item_nav">
-                  <div class="item_nav_icon">
+                  <div class="item_nav_icon" data-toggle="tooltip" data-placement="right" title="" data-original-title="Work">
                     <i class="fa fa-laptop" aria-hidden="true"></i>
                   </div>
                   <div class="item_nav_highlight">
@@ -60,7 +61,7 @@
                 </div>
                 <!-- Nav 04 -->
                 <div class="item_nav">
-                  <div class="item_nav_icon">
+                  <div class="item_nav_icon" data-toggle="tooltip" data-placement="right" title="" data-original-title="Contact">
                     <i class="fa fa-envelope-o" aria-hidden="true"></i>
                   </div>
                   <div class="item_nav_highlight">
@@ -167,7 +168,7 @@
         </div>
       </div>
       <div class="about_logos_container">
-        <ul>
+        <ul id="tech-logos">
           <li><img src="img/logos/apache.svg"/></li>
           <li><img src="img/logos/css.svg"/></li>
           <li><img src="img/logos/git.svg"/></li>
@@ -242,7 +243,7 @@
         </div>
       </div>
       <div class="quote_container">
-        <div class="quotation_left mark">
+        <div class="quotation_left markquote">
           <i class="fa fa-quote-left" aria-hidden="true"></i>
         </div>
         <div class="quote_text">
@@ -257,7 +258,7 @@
           </div>
         </div>
 
-        <div class="quotation_right mark">
+        <div class="quotation_right markquote">
           <i class="fa fa-quote-right" aria-hidden="true"></i>
         </div>
       </div>
@@ -268,17 +269,17 @@
           </div>
           <div class="spotlight_work_thumbnails">
             <ul>
-              <li><a href="#"><div class="work_thumbnail one"></div></a></li>
-              <li><a href="#"><div class="work_thumbnail two"></div></a></li>
-              <li><a href="#"><div class="work_thumbnail three"></div></a></li>
-              <li><a href="#"><div class="work_thumbnail four"></div></a></li>
-              <li><a href="#"><div class="work_thumbnail five"></div></a></li>
-              <li><a href="#"><div class="work_thumbnail six"></div></a></li>
+              <li><a href="javascript:"><div class="work_thumbnail" data-name="Projekat 1" data-intro="PHP/SYMFONY/JAVASCRIPT" data-text="Lorem Ipsum Text Paragraph 01" data-url="http://www.chess.com" data-image="work01.jpg"></div></a></li>
+              <li><a href="javascript:"><div class="work_thumbnail" data-name="Projekat 2" data-intro="JAVA/LARAVEL/JAVASCRIPT" data-text="Lorem Ipsum Text Paragraph 02" data-url="http://www.chess.com" data-image="work02.jpg"></div></a></li>
+              <li><a href="javascript:"><div class="work_thumbnail" data-name="Projekat 3" data-intro="VUE/SYMFONY/JAVASCRIPT" data-text="Lorem Ipsum Text Paragraph 03" data-url="http://www.google.com" data-image="work01.jpg"></div></a></li>
+              <li><a href="javascript:"><div class="work_thumbnail" data-name="Chess.com" data-intro="REACT/SYMFONY/JAVASCRIPT" data-text="Lorem Ipsum Text Paragraph 04" data-url="http://www.chess.com" data-image="work02.jpg"></div></a></li>
+              <li><a href="javascript:"><div class="work_thumbnail" data-name="Projekat 4" data-intro="ANGULAR/SYMFONY/JAVASCRIPT" data-text="Lorem Ipsum Text Paragraph 05" data-url="http://www.chess.com" data-image="work01.jpg"></div></a></li>
+              <li><a href="javascript:"><div class="work_thumbnail" data-name="Do Bola Projekat" data-intro="JQUERY/SYMFONY/JAVASCRIPT" data-text="Lorem Ipsum Text Paragraph 06" data-url="http://www.chess.com" data-image="work02.jpg"></div></a></li>
 
             </ul>
           </div>
           <div class="spotlight_work_name">
-            PROJEKAT 1
+
           </div>
           <div class="spotlight_work_button button button_s">
             <div class="intro_button_text button_text">
@@ -296,22 +297,22 @@
         </div>
         <div class="spotlight_text">
           <div class="spotlight_text_title">
-            chess.com
+
           </div>
           <div class="spotlight_text_intro">
-            PHP / SYMPHONY / JAVASCRIPT
+
           </div>
           <div class="spotlight_text_about">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pharetra ligula quis ante hendrerit, eleifend consectetur nulla ultrices. Nullam velit lectus, blandit ac quam aliquet, imperdiet sodales neque.
+          <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pharetra ligula quis ante hendrerit, eleifend consectetur nulla ultrices. Nullam velit lectus, blandit ac quam aliquet, imperdiet sodales neque. -->
           </div>
-          <div class="spotlight_text_button button button_s">
-            <div class="intro_button_text button_text">
-              Visite website
-            </div>
-            <div class="intro_button_arrow button_arrow">
-              <i class="fa fa-angle-right" aria-hidden="true"></i>
-            </div>
-          </div>
+          <a href="#" class="spotlight_text_button button button_s">
+              <div class="intro_button_text button_text">
+                Visite website
+              </div>
+              <div class="intro_button_arrow button_arrow">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </div>
+          </a>
         </div>
       </div>
       <div class="contact_container">
@@ -357,6 +358,10 @@
       </div>
     </footer>
 
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/jquery.webticker.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
